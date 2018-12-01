@@ -1,0 +1,83 @@
+.game{
+    text-align: center;
+}
+
+.inner {
+    margin: auto;
+}
+
+
+.side_info {
+    vertical-align: top;
+}
+
+.board {
+    height: 70.3vh;
+    width: 35.3vh;
+    background: #dddddd;
+    margin: 0 auto;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.pixel {
+    height: 3.5vh;
+    width: 3.5vh;
+    background: #999999;
+    border: 1px solid black;
+}
+
+.game_start {
+    text-align: center;
+    background: rgba(122,162,179,.5);;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: auto;
+    width: 35.3vh;
+    font-size: 2vh;
+    margin: 0 auto;
+}
+
+.next_piece {
+    height: 12vh;
+    width: 20vh;
+    background: rgba(122,162,179,.5);
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.miniboard {
+    width: 14vh;
+    margin: 0 auto;
+}
+
+.game_info {
+    height: 14vh;
+    width: 20vh;
+    background: rgba(122,162,179,.5);
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 2vh;
+    padding: 1vh;
+}
+
+p {
+    margin: 0;
+}
+
+.controls {
+    height: 20vh;
+    width: 20vh;
+    background: rgba(122,162,179,.5);
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1.5vh;
+    padding: 1vh;
+}

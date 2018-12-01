@@ -1,0 +1,46 @@
+{% extends "template.html" %}
+{% block title %}Danger Noodle{% endblock %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/snek.css') }}">
+{% endblock %}
+{% block content %}
+
+<center>
+<table><tr><td>
+
+  <table>
+  {% for i in range(20)  %} <tr>
+  {% for j in range(20) %}
+  {% if (j == 0 or i == 0 or j == 20 - 1 or i == 20 - 1) %}
+       <td class="border" id="{{j}}-{{i}}"></td>
+  {% else %}
+       <td class="back" id="{{j}}-{{i}}"></td>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</table></td></center>
+<td class="move"><div class="space">
+  <div class="game_info">
+    <p> <b><u>Game info:</u></b> </p>
+    <p id="gi-level">Level: 0</p>
+    <p id="gi-score">Score: 0</p>
+    <p id="gi-status">Game not started</p>
+  </div>&nbsp
+
+  <div class="controls">
+    <h6> <b><u>Controls </u></b></h6>
+    Any Key: Start Game / Unpause<br />
+    P or Spacebar: Pause <br />
+    ←/→ or A/D: Left/right <br />
+    ↑/W: Up <br />
+    ↓/S: Down <br />
+  </div>
+
+</div></td>
+
+</tr></table>
+
+
+
+<script src="{{ url_for('static',filename='js/snek.js') }}"></script>
+{% endblock %}
